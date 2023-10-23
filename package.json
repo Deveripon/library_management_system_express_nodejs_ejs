@@ -1,0 +1,19 @@
+{
+    "name": "library_management_system",
+    "version": "1.0.0",
+    "description": "this is a library management system with express mongobd and ejs",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "mongoose": "^7.6.3",
+        "multer": "^1.4.5-lts.1"
+    }
+}
