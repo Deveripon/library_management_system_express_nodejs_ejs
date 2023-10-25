@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 export const __404Error = (req, res) => {
     res.status(404).send({
         status: 404,

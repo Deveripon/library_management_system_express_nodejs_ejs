@@ -8,6 +8,7 @@ import publicRouter from "./routes/publicRouter.js";
 import bookRouter from "./routes/bookRouter.js";
 import multer from "multer";
 import { coonectToMongoDB } from "./config/mongodb.js";
+import writerRouter from "./routes/writerRouter.js";
 
 //load environment variables
 dotenv.config();
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 //applications default routes
 app.use(publicRouter);
 app.use("/books", bookRouter);
+app.use("/writer", writerRouter);
 
 //use error handler
 app.use(__404Error);
