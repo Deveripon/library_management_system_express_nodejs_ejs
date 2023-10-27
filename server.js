@@ -9,6 +9,7 @@ import bookRouter from "./routes/bookRouter.js";
 import multer from "multer";
 import { coonectToMongoDB } from "./config/mongodb.js";
 import writerRouter from "./routes/writerRouter.js";
+import bookCategoryRouter from "./routes/bookCategoryRouter.js";
 
 //load environment variables
 dotenv.config();
@@ -25,6 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(publicRouter);
 app.use("/books", bookRouter);
 app.use("/writer", writerRouter);
+app.use("/category", bookCategoryRouter);
 
 //use error handler
 app.use(__404Error);
